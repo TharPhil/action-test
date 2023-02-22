@@ -4,8 +4,8 @@
     version: '*'
 - name: list-octopusdeploy-accounts
   env:
-    OCTOPUS_API_KEY: ${{ secrets.apiKey }}
-    OCTOPUS_URL: ${{ secrets.serverURL }}
+    OCTOPUS_API_KEY: ${{ OCTOPUSSERVERAPIKEY }}
+    OCTOPUS_URL: ${{ OCTOPUSSERVERURL }}
     OCTOPUS_SPACE: 'Outer Space'
   run: >
     octopus account list
